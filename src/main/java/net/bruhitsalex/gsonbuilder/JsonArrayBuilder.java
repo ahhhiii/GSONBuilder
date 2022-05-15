@@ -45,6 +45,10 @@ public class JsonArrayBuilder {
         return JsonBuilder.GSON.toJson(jsonArray);
     }
 
+    public String buildToPrettyString() {
+        return JsonBuilder.PRETTY_GSON.toJson(jsonArray);
+    }
+
     public String buildToString(Gson gson) {
         return gson.toJson(jsonArray);
     }
